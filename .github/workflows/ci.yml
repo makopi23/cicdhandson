@@ -10,7 +10,7 @@ jobs:
         name: ci
         runs-on: ubuntu-latest
         steps:
-            - name: チェックアウトする
+            - name: チェックアウトするよ
               uses: actions/checkout@v4
             - name: Goの環境をセットアップする
               uses: actions/setup-go@v5
