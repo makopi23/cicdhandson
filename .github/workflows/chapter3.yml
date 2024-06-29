@@ -19,4 +19,11 @@ jobs:
             - name: actions/checkoutのステータスを表示
               # actions/checkout@v4が成功している場合はsuccessが表示される
               run: echo "${{ steps.checkout.conclusion }}"
+
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: ビルド処理（ダミー）
+              run: echo "build" > output/artifact.zip
               
+
