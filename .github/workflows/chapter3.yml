@@ -14,3 +14,9 @@ jobs:
                 echo "プルリクエストのブランチ名： ${{ github.head_ref }}"
                 echo "プルリクエストの番号： ${{ github.event.pull_request.number }}"
                 echo "プルリクエストの作成者： ${{ github.event.pull_request.user.login }}"
+            - uses: actions/checkout@v4
+              id: checkout # ステップID
+            - name: actions/checkoutのステータスを表示
+              # actions/checkout@v4が成功している場合はsuccessが表示される
+              run: echo "${{ steps.checkout.conclusion }}"
+              
