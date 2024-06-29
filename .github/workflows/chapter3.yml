@@ -23,6 +23,8 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
+            - name: outputディレクトリを作成
+              run: mkdir output
             - name: ビルド処理（ダミー）
               run: touch output/artifact.zip
 
