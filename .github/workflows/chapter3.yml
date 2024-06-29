@@ -24,6 +24,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: ビルド処理（ダミー）
-              run: echo "build" > output/artifact.zip
-              
+              run: touch output/artifact.zip
+
 
